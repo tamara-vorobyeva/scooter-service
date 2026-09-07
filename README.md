@@ -1,47 +1,35 @@
-# 📊 Analysis of the the seasonal trends in the real estate market of St. Petersburg and the Leningrad region for the purpose of Marketing Optimization
+**📊 Analysis of GoFast Scooter Rental Service User Demographics and Financial Dynamics**
 
-## 📌 Business Case Overview
-The client, a real-estate agency was considering entering St. Petersburg's market and needed reliable data to assess its prospects and plan market launch activities. 
+**📌 Business Case Overview**
+* The client, GoFast scooter rental service, required an analysis of its customer base and ride patterns to evaluate the potential profitability of expanding its premium subscription model.
 
-## 🎯 Project Objectives 
-- Identify the market dynamics and deliver insights regarding periods with increased activity of sellers and buyers to leadership.📌 
-- Create interactive dashboard.📌 
+**🎯 Project Objectives**
+* Analyze user demographics and scooter usage patterns across 8 different cities.
+* Assess the financial benefits of the "ultra" paid subscription by comparing monthly subscriber and non-subscriber revenue.
+* Test business hypotheses regarding ride duration, optimal scooter wear-and-tear, and the impact of promotional strategies.
 
-## 🔗 Quick Links
-* ▶ **[View Interactive Dashboard in Yandex DataLens](https://datalens.ru/gvj9ho0yb4tc0)** (No registration required)
-* 🛠 **[View SQL Data Cleaning & Analysis Script](src/data-cleansing-analysis)** 
+**🛠 Tech Stack**
+* **Data Processing:** Python (pandas, numpy) utilized for data cleaning, deduplication, type optimization (e.g., downsizing to Int8/Int32 to save memory), and missing value handling.
+* **Statistical Analysis:** Python (scipy.stats) applied for hypothesis testing and modeling normal distributions of ride durations.
+* **Data Visualization:** Matplotlib, seaborn, and phik used to create correlation matrices and behavioral distributions.
 
----
+**🔍 Research Approach**
+* **Data Cleaning & Optimization:** Analyzed a dataset of 1,534 unique users and 18,068 rides, identifying 31 duplicates and filtering out ~0.5% anomalies (near-zero durations and distances).
+* **Data Integration:** Merged user demographics, ride logs covering 364 days, and subscription pricing into a unified dataset for cohort analysis.
+* **Financial & Statistical Modeling:** Calculated monthly revenue per user based on subscription tiers and modeled ride durations using normal distribution to evaluate promotional thresholds.
 
-## 🛠 Tech Stack
-* **Database:** PostgreSQL (temporary tables, advanced Window Functions, CTEs, complex aggregations, segmentation, pivot).
-* **Data Processing:** PostgreSQL (DBeaver) — utilized for data deduplication and data anomalies filtration.
-* **BI Platform:** Yandex DataLens — leveraged for building the interactive dashboard and performing cohort analysis.
+**💡 Key Findings**
+* **Data Quality & Usage:** The user base has an average age of 24.9 years, completing rides with an average distance of 3,070.66 meters and a duration of 17.81 minutes.
+* **Distribution Traits:** Mean and median values for distance and duration are highly aligned, indicating a near-normal distribution of ride metrics.
+* **Usage Anomalies:** A missing date gap was identified (364 unique days instead of 365), and extreme outliers (rides under 1 minute or 1 meter) were isolated.
 
----
+**🚀 Strategic Recommendations**
+* Prioritize marketing campaigns toward converting free users to the "ultra" subscription, aiming to maximize monthly revenue based on duration trends.
+* Implement the proposed discount for targeted time intervals (e.g., 20-30 minutes) to increase customer loyalty among the most active demographic.
+* Introduce a critical distance surcharge past the 90th percentile threshold to mitigate excessive wear-and-tear costs from prolonged trips over the optimal 3,130 meters.
 
-## 🔍 Research Approach 
-* **Data Cleaning & Scope**: The study analyzed a cleaned 2015–2018 real estate dataset for St. Petersburg and Leningrad Oblast towns, filtering out extreme anomalies in area, price, and zero-duration listings to ensure consistency.
-* **Methodological Segmentation**: The analysis separated the data into specific temporary subsets to distinctly track listing publications (supply) and listing removals (completed sales) over time.
-* **Time Lag Integration**: The methodology explicitly incorporated a natural 1–2 month transaction lag, noting that listing removals heavily reflect purchasing decisions made in preceding months.  
+**📁 Repository Structure**
+* `README.md` — Project overview and executive summary.
+* `/data` — Anonymized raw datasets (`users_go.csv`, `rides_go.csv`, `subscriptions_go.csv`).
+* `/src` — Source code folder containing the Jupyter Notebook with Python analysis.
 
----
-
-## 💡 Key Findings
-*	**St. Petersburg Domination**: St. Petersburg heavily drives the regional market, exhibiting 1.7x higher square-meter prices and a financial volume in November that is 8 times larger than the entire Leningrad Oblast. 
-*	**Autumn Market Peak**: Autumn (September to November) serves as the ultimate peak season where buyer and seller activities align, contrasted by a sharp supply-demand mismatch in February and absolute market stagnation in May. 
-*	**Liquidity and Format Correlations**: Most listings close within 1–3 months or stretch beyond half a year, with transaction speeds heavily dictated by lower prices, smaller 1-room formats, and the presence of a balcony. 
-
----
-
-## 🚀 Strategic Recommendations
-*	**Core Focus & Timing**: Concentrate primary business operations within St. Petersburg and launch major marketing campaigns between late September and October to capture the peak annual demand. 
-*	**Target High-Liquidity Segment**: Build the core portfolio around 1–2 room apartments ranging between 45 and 65 sq.m. in St. Petersburg and highly accessible inner-city towns like Gatchina, Pushkin, and Pavlovsk. 
-*	**Cautious Premium Execution**: Enter the high-commission premium tier selectively, factoring in aggressive market competition and a 1.5x longer sales cycle (averaging 228 days compared to 155 days for budget properties). 
-
----
-
-## 📁 Repository Structure
-* 'README.md' — Project overview and executive summary (this file).
-* '/data' — Anonymized raw dataset limited to 500 data entries.
-* '/src' — Source code folder containing SQL script (PostGreSQL).

@@ -30,7 +30,7 @@
 
 **📁 Repository Structure**
 * `README.md` — Project overview and executive summary.
-* `/data` — Anonymized raw datasets (`users_go.csv`, `rides_go.csv`, `subscriptions_go.csv`).
+* `/data` — Anonymized merged data set formed out of original raw datasets (`users_go.csv`, `rides_go.csv`, `subscriptions_go.csv`).
 * `/src` — Source code folder containing the Jupyter Notebook with Python analysis.
 
 **🔢 Data Preview**

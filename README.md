@@ -33,3 +33,15 @@
 * `/data` — Anonymized raw datasets (`users_go.csv`, `rides_go.csv`, `subscriptions_go.csv`).
 * `/src` — Source code folder containing the Jupyter Notebook with Python analysis.
 
+**🔢 Data Preview**
+<div style="overflow-x: auto; max-width: 100%;">
+  
+|   user_id |   distance |   duration | date                | distance_group       | duration_group         | name   |   age | city   | subscription_type   | age_group            |   minute_price |   start_ride_price |   subscription_fee |   month |
+|----------:|-----------:|-----------:|:--------------------|:---------------------|:-----------------------|:-------|------:|:-------|:--------------------|:---------------------|---------------:|-------------------:|-------------------:|--------:|
+|         1 |    4409.92 |         25 | 2021-01-01 00:00:00 | Long (3000-4500 m)   | Long (20-30 minutes)   | кира   |    22 | тюмень | ultra               | Young people (18-35) |              6 |                  0 |                199 |       1 |
+|         1 |    2617.59 |         15 | 2021-01-18 00:00:00 | Middle (1500-3000 m) | Middle (10-20 minutes) | кира   |    22 | тюмень | ultra               | Young people (18-35) |              6 |                  0 |                199 |       1 |
+|         1 |     754.16 |          6 | 2021-04-20 00:00:00 | Short (1-1500 m)     | Short (1-10 minutes)   | кира   |    22 | тюмень | ultra               | Young people (18-35) |              6 |                  0 |                199 |       4 |
+|         1 |    2694.78 |         18 | 2021-08-11 00:00:00 | Middle (1500-3000 m) | Middle (10-20 minutes) | кира   |    22 | тюмень | ultra               | Young people (18-35) |              6 |                  0 |                199 |       8 |
+|         1 |    4028.69 |         26 | 2021-08-28 00:00:00 | Long (3000-4500 m)   | Long (20-30 minutes)   | кира   |    22 | тюмень | ultra  
+
+</div>

@@ -9,14 +9,14 @@
 * Test business hypotheses regarding ride duration, optimal scooter wear-and-tear, and the impact of promotional strategies.
 
 **🔗 Quick Links**
-🛠 **[View Data Cleaning, Analysis & Statistical Modeling Script]([src/analysis-scooter-clients-base.ipynb])** 
+🛠 **[View Data Cleaning, Analysis & Statistical Modeling Script](src/analysis-scooter-clients-base.ipynb)** 
 
-
+---
 **🛠 Tech Stack**
 * **Data Processing:** Python (pandas, numpy) utilized for data cleaning, deduplication, type optimization (e.g., downsizing to Int8/Int32 to save memory), and missing value handling.
 * **Statistical Analysis:** Python (scipy.stats) applied for hypothesis testing and modeling normal distributions of ride durations.
 * **Data Visualization:** Matplotlib, seaborn, and phik used to create correlation matrices and behavioral distributions.
-
+---
 **🔍 Research Approach**
 * **Data Cleaning & Optimization:** Analyzed a dataset of 1,534 unique users and 18,068 rides, identifying 31 duplicates and filtering out ~0.5% anomalies (near-zero durations and distances).
 * **Data Integration:** Merged user demographics, ride logs covering 364 days, and subscription pricing into a unified dataset for cohort analysis.
@@ -31,7 +31,7 @@
 * Prioritize marketing campaigns toward converting free users to the "ultra" subscription, aiming to maximize monthly revenue based on duration trends.
 * Implement the proposed discount for targeted time intervals (e.g., 20-30 minutes) to increase customer loyalty among the most active demographic.
 * Introduce a critical distance surcharge past the 90th percentile threshold to mitigate excessive wear-and-tear costs from prolonged trips over the optimal 3,130 meters.
-
+---
 **📁 Repository Structure**
 * `README.md` — Project overview and executive summary.
 * `/data` — Anonymized merged data set formed out of original raw datasets (`users_go.csv`, `rides_go.csv`, `subscriptions_go.csv`).

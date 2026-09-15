@@ -8,7 +8,7 @@
 * Assess the financial benefits of the "ultra" paid subscription by comparing monthly subscriber and non-subscriber revenue.
 * Test business hypotheses regarding ride duration, optimal scooter wear-and-tear, and the impact of promotional strategies.
 
-🔗 Quick Links
+**🔗 Quick Links**
 🛠 **[View Data Cleaning, Analysis & Statistical Modeling Script]([src/Analysis-scooter-clients-base.ipynb])** 
 
 **🛠 Tech Stack**

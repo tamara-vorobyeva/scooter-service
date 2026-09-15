@@ -9,7 +9,7 @@
 * Test business hypotheses regarding ride duration, optimal scooter wear-and-tear, and the impact of promotional strategies.
 
 **🔗 Quick Links**
-🛠 **[View Data Cleaning, Analysis & Statistical Modeling Script](src/analysis-scooter-clients-base.ipynb)** 
+🛠 **[View Data Cleaning, Analysis & Statistical Modeling Script in Python](src/analysis-scooter-clients-base.ipynb)** 
 
 ---
 **🛠 Tech Stack**

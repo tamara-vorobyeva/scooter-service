@@ -8,6 +8,10 @@
 * Assess the financial benefits of the "ultra" paid subscription by comparing monthly subscriber and non-subscriber revenue.
 * Test business hypotheses regarding ride duration, optimal scooter wear-and-tear, and the impact of promotional strategies.
 
+🔗 Quick Links
+ View Jupyter Notebook
+🛠 **[View Data Cleaning, Analysis & Statistical Modeling Script]([src/Analysis-scooter-clients-base.ipynb])** 
+
 **🛠 Tech Stack**
 * **Data Processing:** Python (pandas, numpy) utilized for data cleaning, deduplication, type optimization (e.g., downsizing to Int8/Int32 to save memory), and missing value handling.
 * **Statistical Analysis:** Python (scipy.stats) applied for hypothesis testing and modeling normal distributions of ride durations.
